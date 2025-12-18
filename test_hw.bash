@@ -13,6 +13,13 @@ res=0
 out=$(echo "apple pen apple" | ./hw apple)
 [ "${out}" = 2 ] || ng "$LINENO"
 
+### 異常系のテスト
+# 引数がない場合に、終了ステータスが 1 になるかを確認
+./hw > /dev/null 2>&1
+if [ $? -ne 1 ]; then
+    echo "引数なしの時に終了ステータスが1になっていません"
+    res=1
+fi
 #違う単語の時
 out=$(echo "apple pen apple" | ./hw banana)
 [ "${out}" = 0 ] || ng "$LINENO"

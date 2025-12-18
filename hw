@@ -4,6 +4,13 @@
 
 import sys
 
+def main():
+    # 引数チェック
+    if len(sys.argv) < 2:
+        # 使い方を「標準エラー出力」に出す
+        print("Usage: hw <word>", file=sys.stderr)
+        # 終了ステータスを 1 にする
+        sys.exit(1)
 def count_word():
     # 数えたい単語があるか確認
     if len(sys.argv) < 2:
