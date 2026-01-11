@@ -10,16 +10,24 @@ $ cd robosys2025_hw
 ```
 $ chmod +x hw
 ```
-## 使い方
-標準入力からテキストを読み込んで、引数に検索したい単語を指定して実行します。
-```bash
-$ cat text.txt | ./hw <検索したい単語>
-```
 ### 実行例
+
+標準入力から文字列をいれると指定した単語がいくつあるか数えます。
+
+例.1
+
 ```bash
 $ echo "apple banana apple" | ./hw apple
 2
 ```
+
+例.2
+
+```bash
+$ echo "apple banana apple" | ./hw banana
+1
+```
+
 ## 必要な環境
 * Linux環境
 * Python 3.7+
