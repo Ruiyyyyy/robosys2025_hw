@@ -1,3 +1,5 @@
+[![test](https://github.com/Ruiyyyyy/robosys2025_hw/actions/workflows/test.yml/badge.svg)](https://github.com/Ruiyyyyy/robosys2025_hw/actions/workflows/test.yml)
+
 # hw コマンド
 標準入力から読み込んだテキストの中に、指定した単語がいくつあるかをカウントするコマンドです。
 
