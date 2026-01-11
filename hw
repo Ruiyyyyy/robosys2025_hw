@@ -7,25 +7,16 @@ import sys
 def main():
     # 引数チェック
     if len(sys.argv) < 2:
-        # 使い方を「標準エラー出力」に出す
-        print("Usage: hw <word>", file=sys.stderr)
-        # 終了ステータスを 1 にする
+        print("使い方: ./count <単語>", file=sys.stderr)
         sys.exit(1)
-def count_word():
-    # 数えたい単語があるか確認
-    if len(sys.argv) < 2:
-        print("使い方: ./count <単語>")
-        return
 
-    target_word = sys.argv[1] # 1番目の引数をターゲットにする
+    target_word = sys.argv[1] 
     total_count = 0
-    
-    # 標準入力を1行ずつ読み込む
+
     for line in sys.stdin:
-        # その行にターゲットが何個あるか数えて足す
         total_count += line.count(target_word)
-    # 結果を表示
+    
     print(total_count)
 
 if __name__ == '__main__':
-    count_word()
+    main()
