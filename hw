@@ -5,7 +5,6 @@
 import sys
 
 def main():
-    # 引数チェック
     if len(sys.argv) < 2:
         print("使い方: ./count <単語>", file=sys.stderr)
         sys.exit(1)
