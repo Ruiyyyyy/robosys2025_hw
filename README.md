@@ -3,8 +3,8 @@
 
 ## インストール方法
 ```bash
-git clone [https://github.com/Ruiyyyyy/robosys2025_hw.git)
-cd robosys2025_hw
+$ git clone [https://github.com/Ruiyyyyy/robosys2025_hw.git)
+$ cd robosys2025_hw
 ```
 必要に応じて実行権限を付与してください。
 ```
@@ -27,9 +27,5 @@ $ echo "apple banana apple" | ./hw apple
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許
 可されます．
-- このパッケージは，Robosys2025由来のコード（© 2025 Ryu Taniguchi）を利用しています．
-- このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の
-ものを，本人の許可を得て自身の著作としたものです．
-    - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/prob_robotics_2025)
 - © 2025 Ryu Taniguchi
 
